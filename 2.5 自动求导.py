@@ -106,7 +106,8 @@ os.environ['KMP_DUPLICATE_LIB_OK'] = 'TRUE'
 
 fig, ax = d2l.plt.subplots(1)
 
-x = np.linspace(-2*np.pi, 2*np.pi, 100)
+# x = np.linspace(-2*np.pi, 2*np.pi, 100)
+x = np.arange(-2*np.pi, 2*np.pi, 0.025*np.pi)
 print(x)
 x1 = torch.tensor(x, requires_grad=True)    # 转x为tensor
 y1 = torch.sin(x1)
